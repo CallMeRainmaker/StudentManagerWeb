@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="StudentWeb:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc1d5c1c-2128-4cf3-b33c-33568ae93c23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/StudentManagerWeb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/css/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/jquery.easyui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/js/outlook2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/js/validateExtends.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/color.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/2012080412263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/asterisk_orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/basket_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/book_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/book_open_mark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/book_previous.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/chart_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/door_out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/edit_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/edit_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/filter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/find.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/folder_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/house.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_clipart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_shapes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_smartart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/mini_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/mini_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/mini_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/note.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/pencil_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/reload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/text_list_bullets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/text_list_numbers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/user_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/user_gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/user_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/vcard_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/world_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/world_night.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/zoom_in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/locale/easyui-lang-zh_CN.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1264875780">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="3" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="9" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="3" />
+          <entry key="JSP" value="9" />
+          <entry key="JavaScript" value="3" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="1" />
+          <entry key="java" value="1646" />
+          <entry key="jsp" value="13" />
+          <entry key="xml" value="90" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1646" />
+          <entry key="JSP" value="13" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="90" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1900534501">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CpachaServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>$PROJECT_DIR$/web/easyUI</dir>
+      <dir>$PROJECT_DIR$/web/view</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/com/ischoolbar/programmer/util/CpashaUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/util/CpashaUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/util/CpachaUtil.java" />
+        <option value="$PROJECT_DIR$/web/view/login.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CpachaServlet.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="930" />
+    <option name="height" value="1017" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536417917962" />
+    <property name="last_opened_file_path" value="$USER_HOME$/room/StudentManagerWeb" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer" />
+      <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer/util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/view" />
+      <recent name="$PROJECT_DIR$/web/classes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="StudentWeb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_8_StudentWeb" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="38997" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="StudentWeb:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc1d5c1c-2128-4cf3-b33c-33568ae93c23" name="Default Changelist" comment="" />
+      <created>1536397683565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536397683565</updated>
+      <workItem from="1536397685600" duration="8816000" />
+      <workItem from="1536416122779" duration="732000" />
+      <workItem from="1536417158174" duration="296000" />
+      <workItem from="1536417630578" duration="334000" />
+      <workItem from="1536418299857" duration="1231000" />
+      <workItem from="1536421243612" duration="182000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11926000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1023" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23472668" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3274648" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22508039" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3282353" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/classes/easyui/js/outlook2.js" />
+    <entry file="file://$PROJECT_DIR$/web/easyui/js/outlook2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/js/H-ui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/404.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/500.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4346">
+          <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/util/CpachaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/apache-tomcat-9.0.8/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CpachaServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>StudentWeb:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>StudentWeb</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
