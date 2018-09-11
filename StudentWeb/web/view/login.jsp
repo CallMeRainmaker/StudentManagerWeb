@@ -28,7 +28,7 @@
 	$(function(){
 		//点击图片切换验证码
 		$("#vcodeImg").click(function(){
-			this.src="CpachaServlet?method=doPost&t="+new Date().getTime();
+			this.src="CpachaServlet?method=loginCpacha&t="+new Date().getTime();
 		});
 		
 		//登录
@@ -46,7 +46,7 @@
 			$.ajax({
 				type: "post",
 				url: "LoginServlet?method=Login",
-				data: data, 
+				data: data,
 				dataType: "text", //返回数据类型
 				success: function(msg){
 					if("vcodeError" == msg){
@@ -102,7 +102,7 @@
       <div class="row cl">
         <div class="formControls col-8 col-offset-3">
           <input class="input-text size-L" name="vcode" type="text" placeholder="请输入验证码" style="width: 200px;">
-          <img title="点击图片切换验证码" id="vcodeImg" src="CpachaServlet?method=doPost"></div>
+          <img title="点击图片切换验证码" id="vcodeImg" src="CpachaServlet?method=loginCpacha"></div>
       </div>
       
       <div class="mt-20 skin-minimal" style="text-align: center;">
@@ -128,8 +128,6 @@
     </form>
   </div>
 </div>
-<div class="footer">Copyright@ &nbsp; 胡旭东 </div>
-
-
+<div class="footer">Copyright&nbsp;@ &nbsp;胡旭东 </div>
 </body>
 </html>

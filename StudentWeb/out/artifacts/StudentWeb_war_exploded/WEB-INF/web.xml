@@ -21,4 +21,14 @@
         <servlet-name>CpachaServlet</servlet-name>
         <url-pattern>/CpachaServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <description>登录验证</description>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.ischoolbar.programmer.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
