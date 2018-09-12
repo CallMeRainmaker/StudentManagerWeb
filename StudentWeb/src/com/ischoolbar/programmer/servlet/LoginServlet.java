@@ -51,9 +51,33 @@ public class LoginServlet extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("user", admin);
                 session.setAttribute("userType", type);
-                loginStatus = "loginSuccess";
+                loginStatus = "admin";
                 break;
             }
+//            case 2:{
+//                AdminDao adminDao = new AdminDao();
+//                Admin admin = adminDao.login(name, password);
+//                if (admin == null) {
+//                    response.getWriter().write("loginError");
+//                    return;
+//                }
+//                HttpSession session = request.getSession();
+//                session.setAttribute("user", student);
+//                session.setAttribute("userType", type);
+//                loginStatus = "admin";
+//            }
+//            case 3:{
+//                AdminDao adminDao = new AdminDao();
+//                Admin admin = adminDao.login(name, password);
+//                if (admin == null) {
+//                    response.getWriter().write("loginError");
+//                    return;
+//                }
+//                HttpSession session = request.getSession();
+//                session.setAttribute("user", teacher);
+//                session.setAttribute("userType", type);
+//                loginStatus = "admin";
+//            }
             default:
                 break;
         }
@@ -65,6 +89,6 @@ public class LoginServlet extends HttpServlet {
 //    private void logout(HttpServletRequest request , HttpServletResponse response) throws IOException {
 //        request.getSession().removeAttribute("user");
 //        request.getSession().removeAttribute("userType");
-//        //response.sendRedirect("index.jsp");
+//        response.sendRedirect("index.jsp");
 //    }
 }

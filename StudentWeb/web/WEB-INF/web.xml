@@ -31,4 +31,28 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <description>登录状态过滤</description>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.ischoolbar.programmer.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/SystemServlet</url-pattern>
+        <url-pattern>/AdminServlet</url-pattern>
+        <url-pattern>/StudentServlet</url-pattern>
+        <url-pattern>/TeacherServlet</url-pattern>
+        <url-pattern>/GradeServlet</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <description>登录主界面</description>
+        <servlet-name>SystemServlet</servlet-name>
+        <servlet-class>com.ischoolbar.programmer.servlet.SystemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SystemServlet</servlet-name>
+        <url-pattern>/SystemServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
