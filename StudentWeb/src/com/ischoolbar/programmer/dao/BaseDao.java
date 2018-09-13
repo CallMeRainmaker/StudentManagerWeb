@@ -9,9 +9,9 @@ import java.sql.SQLException;
 public class BaseDao {
     private DBUtil dbUtil = new DBUtil();
 
-//    public void closeCon(){
-//        dbUtil.closeCon();
-//    }
+    public void closeCon(){
+        dbUtil.closeCon();
+    }
 
     public ResultSet query(String sql){
         try{
