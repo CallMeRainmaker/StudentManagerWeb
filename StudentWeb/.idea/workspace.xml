@@ -15,7 +15,7 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/view/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CpachaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CpachaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/CpachaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/CpachaServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/classes/easyui/css/default.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/classes/easyui/css/demo.css" beforeDir="false" />
@@ -225,9 +225,9 @@
     <session id="-1900534501">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.11" value="7" />
           <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
@@ -235,15 +235,15 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="admin" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="46" />
-          <entry key="jsp" value="14" />
+          <entry key="java" value="50" />
+          <entry key="jsp" value="15" />
           <entry key="sql" value="4" />
           <entry key="xml" value="2" />
         </counts>
@@ -252,16 +252,16 @@
         <counts>
           <entry key="Database Element" value="3" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="46" />
-          <entry key="JSP" value="14" />
+          <entry key="JAVA" value="50" />
+          <entry key="JSP" value="15" />
           <entry key="Scratch" value="4" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5551" />
-          <entry key="jsp" value="490" />
+          <entry key="java" value="6049" />
+          <entry key="jsp" value="742" />
           <entry key="sql" value="18" />
           <entry key="txt" value="22" />
           <entry key="xml" value="532" />
@@ -269,8 +269,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5551" />
-          <entry key="JSP" value="490" />
+          <entry key="JAVA" value="6049" />
+          <entry key="JSP" value="742" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="SQL" value="18" />
           <entry key="XML" value="532" />
@@ -280,43 +280,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentWeb.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1435">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ClazzServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="51" column="11" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="51" selection-end-column="11" />
+            <state relative-caret-position="533">
+              <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Page.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#1895#1910#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -345,47 +316,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="143" column="38" lean-forward="true" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ClazzDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+            <state relative-caret-position="1435">
+              <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#431#438#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -432,8 +384,8 @@
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/web/view/system.jsp" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Page.java" />
-        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ClazzDao.java" />
         <option value="$PROJECT_DIR$/web/view/clazzList.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ClazzDao.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ClazzServlet.java" />
       </list>
     </option>
@@ -458,10 +410,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="128" />
-    <option name="y" value="140" />
-    <option name="width" value="930" />
-    <option name="height" value="1017" />
+    <option name="width" value="960" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -526,6 +476,12 @@
               <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -539,8 +495,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -549,7 +505,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/huxudong/IdeaProjects/StudentManagerWeb/StudentWeb/src/com/ischoolbar/programmer/servlet/LoginServlet.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536853459302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536938328570" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/lib/mysql-connector-java-5.1.7-bin.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -560,19 +516,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/web/lib" />
-      <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer" />
-      <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer/util" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/web/view" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/web/lib" />
       <recent name="$PROJECT_DIR$/web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/web/lib" />
+      <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer" />
+      <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer/util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -710,18 +666,21 @@
       <workItem from="1536804211656" duration="2210000" />
       <workItem from="1536834058901" duration="51000" />
       <workItem from="1536835157772" duration="10301000" />
-      <workItem from="1536845485810" duration="2820000" />
+      <workItem from="1536845485810" duration="4147000" />
+      <workItem from="1536931726741" duration="488000" />
+      <workItem from="1536932235607" duration="155000" />
+      <workItem from="1536932411632" duration="5704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70962000" />
+    <option name="totallyTimeSpent" value="78636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2545552" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1404073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -731,7 +690,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.77112675" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.77066356" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -739,7 +698,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298122" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32945284" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32712457" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32629108" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -838,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/util/CpachaUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1230">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/artifacts/StudentWeb_war_exploded.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -880,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/filter/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -898,13 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1453">
-          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -934,20 +872,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentWeb.iml">
+    <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="861">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Page.java">
+    <entry file="file://$PROJECT_DIR$/StudentWeb.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#404#405#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="738">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -971,46 +906,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ClazzDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/util/CpachaUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="169" column="96" selection-start-line="169" selection-start-column="96" selection-end-line="169" selection-end-column="96" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#1;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="328">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
+        <state relative-caret-position="328">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#280#281#0" expanded="true" />
@@ -1019,12 +924,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ClazzServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="51" column="11" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="51" selection-end-column="11" />
+        <state relative-caret-position="902">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2915">
+          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="143" column="38" lean-forward="true" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ClazzDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1435">
+          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#431#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ClazzServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1895#1910#0" expanded="true" />
           </folding>
         </state>
       </provider>

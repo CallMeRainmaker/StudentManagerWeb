@@ -140,7 +140,12 @@
 				},
 			]
 	    });
-	  	
+        //搜索按钮监听事件
+        $("#search").click(function(){
+            $('#dataList').datagrid('load',{
+                clazzName: $('#clazzName').val()
+            });
+        });
 	});
 	</script>
 </head>
@@ -154,6 +159,10 @@
 		<div style="float: left;"><a id="add" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加</a></div>
 			<div style="float: left;" class="datagrid-btn-separator"></div>
 		<div style="float: left; margin-right: 10px;"><a id="delete" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-some-delete',plain:true">删除</a></div>
+		<div style="margin-top: 3px;">班级名称<input id="clazzname" class="easyui-textbox" name="clazzname">
+			<a id="search" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">查询</a>
+		</div>
+
 	</div>
 	
 	<!-- 添加窗口 -->
