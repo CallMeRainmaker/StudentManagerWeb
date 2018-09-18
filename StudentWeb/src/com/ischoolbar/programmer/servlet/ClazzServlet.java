@@ -27,13 +27,29 @@ public class ClazzServlet extends HttpServlet {
             getClazzList(request,response);
         }else if("AddClazz".equals(method)){
             addClass(request,response);
+        }else if("DeleteClazz".equals(method)){
+            deleteClazz(request,response);
         }
     }
 
-    public void clazzList(HttpServletRequest request,HttpServletResponse response) throws IOException{
-        try{
-            request.getRequestDispatcher("view/clazzList.jsp").forward(request,response);
-        }catch (ServletException e){
+    private void deleteClazz(HttpServletRequest request, HttpServletResponse response) {
+        Integer clazzidid = Integer.parseInt(request.getParameter("clazzid"));
+        ClazzDao clazzDao = new ClazzDao();
+        if(clazzDao.deleteClazz(clazzidid)){
+            try{
+                response.getWriter().write("success");
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void clazzList(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            request.getRequestDispatcher("view/clazzList.jsp").forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -47,7 +63,7 @@ public class ClazzServlet extends HttpServlet {
         clazz.setName(name);
         ClazzDao clazzDao = new ClazzDao();
         List<Clazz> clazzes = clazzDao.getClazzList(clazz,new Page(currentPage,pageSize));
-        int total = clazzDao.getClaszzTotal(clazz);
+        int total = clazzDao.getClazzTotal(clazz);
         response.setCharacterEncoding("utf-8");
         Map<String,Object> map = new HashMap<String,Object>();
         map.put("total",total);
@@ -66,6 +82,8 @@ public class ClazzServlet extends HttpServlet {
         clazz.setName(name);
         clazz.setInfo(info);
         ClazzDao clazzDao = new ClazzDao();
-
+        if(clazzDao.addClazz(clazz)){
+            response.getWriter().write("success");
+        }
     }
 }

@@ -33,7 +33,7 @@ public class ClazzDao extends BaseDao {
         return ret;
     }
 
-    public int getClaszzTotal(Clazz clazz){
+    public int getClazzTotal(Clazz clazz){
         int total = 0;
         String sql = "select count(*)as total from clazz ";
         if(!StringUtil.isEmpty(clazz.getName())){
@@ -50,22 +50,14 @@ public class ClazzDao extends BaseDao {
         return total;
     }
 
-//    public boolean addClaszz(Clazz clazz){
-//        int total = 0;
-//        String sql = "insert into clazz(null,?,?) c";
-//        if(!StringUtil.isEmpty(clazz.getName())){
-//            sql += "where name like '%" + clazz.getName() + "%'";
-//        }
-//        ResultSet resultSet =  query(sql);
-//        try{
-//            while(resultSet.next()){
-//                total = resultSet.getInt("id");
-//            }
-//        }catch (SQLException e){
-//            e.printStackTrace();
-//        }
-//        return total;
-//    }
+    public boolean addClazz(Clazz clazz){
+        String sql = "insert into clazz values(null,'"+clazz.getName()+"','"+clazz.getInfo()+"') ";
+        return update(sql);
+    }
 
+    public boolean deleteClazz(int clazzid){
+        String sql = "delete from clazz where id = " + clazzid;
+        return update(sql);
+    }
 
 }

@@ -22,4 +22,13 @@ public class BaseDao {
         }
         return null;
     }
+
+    public boolean update(String sql){
+        try{
+            return dbUtil.getConnection().prepareStatement(sql).executeUpdate()>0;
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return false;
+    }
 }
