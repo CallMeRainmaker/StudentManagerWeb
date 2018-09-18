@@ -33,7 +33,7 @@ public class ClazzDao extends BaseDao {
         return ret;
     }
 
-    public int getClaszzTatal(Clazz clazz){
+    public int getClaszzTotal(Clazz clazz){
         int total = 0;
         String sql = "select count(*)as total from clazz ";
         if(!StringUtil.isEmpty(clazz.getName())){
@@ -42,7 +42,7 @@ public class ClazzDao extends BaseDao {
         ResultSet resultSet =  query(sql);
         try{
             while(resultSet.next()){
-                total = resultSet.getInt("id");
+                total = resultSet.getInt("total");
             }
         }catch (SQLException e){
             e.printStackTrace();

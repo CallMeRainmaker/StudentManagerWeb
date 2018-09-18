@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import net.sf.json.JSONArray;
 
 public class ClazzServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -46,14 +47,13 @@ public class ClazzServlet extends HttpServlet {
         clazz.setName(name);
         ClazzDao clazzDao = new ClazzDao();
         List<Clazz> clazzes = clazzDao.getClazzList(clazz,new Page(currentPage,pageSize));
-        int total = clazzDao.getClaszzTatal(clazz);
-
+        int total = clazzDao.getClaszzTotal(clazz);
+        response.setCharacterEncoding("utf-8");
         Map<String,Object> map = new HashMap<String,Object>();
         map.put("total",total);
         map.put("rows",clazzes);
-        response.setCharacterEncoding("UTF-8");
         try{
-            response.getWriter().write(JsonArray.fromObject(map).toString());
+            response.getWriter().write(JSONArray.fromObject(clazzes).toString());
         }catch (IOException e){
             e.printStackTrace();
         }

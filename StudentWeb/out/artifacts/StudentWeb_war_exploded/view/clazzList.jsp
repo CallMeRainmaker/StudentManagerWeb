@@ -32,7 +32,7 @@
 				{field:'chk',checkbox: true,width:50},
  		        {field:'id',title:'ID',width:50, sortable: true},    
  		        {field:'name',title:'班级名称',width:200},
- 		        {field:'INFO',title:'班级介绍',width:100,
+ 		        {field:'info',title:'班级介绍',width:100,
  		        },
 	 		]], 
 	        toolbar: "#toolbar"
@@ -142,10 +142,9 @@
 	    });
         //搜索按钮监听事件
         $("#search").click(function(){
-            alert();
-            // $('#dataList').datagrid('load',{
-            //     clazzName: $('#clazzName').val()
-            // });
+            $('#dataList').datagrid('load',{
+                clazzName: $('#clazzName').val()
+            });
         });
 	});
 	</script>
@@ -160,7 +159,7 @@
 		<div style="float: left;"><a id="add" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加</a></div>
 			<div style="float: left;" class="datagrid-btn-separator"></div>
 		<div style="float: left; margin-right: 10px;"><a id="delete" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-some-delete',plain:true">删除</a></div>
-		<div style="margin-top: 3px;">班级名称<input id="clazzname" class="easyui-textbox" name="clazzname">
+		<div style="margin-top: 3px;">班级名称<input id="clazzName" class="easyui-textbox" name="clazzName">
 			<a id="search" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">查询</a>
 		</div>
 
