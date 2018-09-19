@@ -215,7 +215,15 @@
                         $("#edit_info").val("");
                     }
                 },
-            ]
+            ],
+            onBeforeOpen: function(){
+                var selectRow = $("#dataList").datagrid("getSelected");
+                //console.log(selectRow);
+                //设置值
+                $("#edit_name").textbox('setValue', selectRow.name);
+                $("#edit_info").val(selectRow.info);
+                $("#edit-id").val(selectRow.id);
+            }
         });
 	});
 	</script>
@@ -241,6 +249,7 @@
 	<!-- 添加窗口 -->
 	<div id="addDialog" style="padding: 10px">  
     	<form id="addForm" method="post">
+		<input type="hidden" id="edit-id" name="id">
 	    	<table cellpadding="8" >
 	    		<tr>
 	    			<td>班级名称:</td>
