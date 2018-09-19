@@ -147,11 +147,75 @@
             });
         });
         //修改按钮监听事件
-        $("#edit").click(function(){
+        $("#edit-btn").click(function(){
             var selectRow = $("#dataList").datagrid("getSelected");
             if(selectRow == null){
                 $.messager.alert("消息提醒", "请选择数据进行修改!", "warning");
+                return;
             }
+            $("#editDialog").dialog("open");
+        });
+
+        //设置编辑班级窗口
+        $("#editDialog").dialog({
+            title: "编辑班级",
+            width: 500,
+            height: 400,
+            iconCls: "icon-edit",
+            modal: true,
+            collapsible: false,
+            minimizable: false,
+            maximizable: false,
+            draggable: true,
+            closed: true,
+            buttons: [
+                {
+                    text:'确定修改',
+                    plain: true,
+                    iconCls:'icon-edit',
+                    handler:function(){
+                        var validate = $("#editForm").form("validate");
+                        if(!validate){
+                            $.messager.alert("消息提醒","请检查你输入的数据!","warning");
+                            return;
+                        } else{
+                            //var gradeid = $("#add_gradeList").combobox("getValue");
+                            $.ajax({
+                                type: "post",
+                                url: "ClazzServlet?method=EditClazz",
+                                data: $("#editForm").serialize(),
+                                success: function(msg){
+                                    if(msg == "success"){
+                                        $.messager.alert("消息提醒","修改成功!","info");
+                                        //关闭窗口
+                                        $("#editDialog").dialog("close");
+                                        //清空原表格数据
+                                        $("#edit_name").textbox('setValue', "");
+                                        $("#edit_info").val("");
+                                        //重新刷新页面数据
+                                        //$('#gradeList').combobox("setValue", gradeid);
+                                        $('#dataList').datagrid("reload");
+
+                                    } else{
+                                        $.messager.alert("消息提醒","修改失败!","warning");
+                                        return;
+                                    }
+                                }
+                            });
+                        }
+                    }
+                },
+                {
+                    text:'重置',
+                    plain: true,
+                    iconCls:'icon-reload',
+                    handler:function(){
+                        $("#edit_name").textbox('setValue', "");
+                        //重新加载介绍
+                        $("#edit_info").val("");
+                    }
+                },
+            ]
         });
 	});
 	</script>
@@ -165,13 +229,13 @@
 	<div id="toolbar">
 		<div style="float: left;"><a id="add" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加</a></div>
 		<div style="float: left;" class="datagrid-btn-separator"></div>
+		<div style="float: left; margin-right: 10px;"><a id="edit-btn" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">编辑</a></div>
+		<div style="float: left;" class="datagrid-btn-separator"></div>
 		<div style="float: left; margin-right: 10px;"><a id="delete" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-some-delete',plain:true">删除</a></div>
 		<div style="float: left;" class="datagrid-btn-separator"></div>
-		<div style="float: left; margin-right: 10px;"><a id="edit" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改</a></div>
 		<div style="margin-top: 3px;">班级名称<input id="clazzName" class="easyui-textbox" name="clazzName">
 			<a id="search" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">查询</a>
 		</div>
-
 	</div>
 	
 	<!-- 添加窗口 -->
