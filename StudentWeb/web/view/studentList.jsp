@@ -116,28 +116,7 @@
             	});
             }
 	    });
-	    
-	  	//年级下拉框
-	  	$("#gradeList").combobox({
-	  		width: "150",
-	  		height: "25",
-	  		valueField: "id",
-	  		textField: "name",
-	  		multiple: false, //可多选
-	  		editable: false, //不可编辑
-	  		method: "post",
-	  		url: "GradeServlet?method=GradeList&t="+new Date().getTime(),
-	  		onChange: function(newValue, oldValue){
-	  			//加载该年级下的学生
-	  			$('#dataList').datagrid("options").queryParams = {gradeid: newValue};
-	  			$('#dataList').datagrid("reload");
-	  			
-	  			//加载该年级下的班级
-	  			$("#clazzList").combobox("clear");
-	  			$("#clazzList").combobox("options").queryParams = {gradeid: newValue};
-	  			$("#clazzList").combobox("reload")
-	  		}
-	  	});
+
 	  	//班级下拉框
 	  	$("#clazzList").combobox({
 	  		width: "150",
@@ -147,7 +126,7 @@
 	  		multiple: false, //可多选
 	  		editable: false, //不可编辑
 	  		method: "post",
-	  		url: "ClazzServlet?method=ClazzList&t="+new Date().getTime(),
+	  		url: "ClazzServlet?method=getClazzList&t="+new Date().getTime(),
 	  		onChange: function(newValue, oldValue){
 	  			//加载班级下的学生
 	  			$('#dataList').datagrid("options").queryParams = {clazzid: newValue};
@@ -156,7 +135,7 @@
 	  	});
 	  	
 	  	//下拉框通用属性
-	  	$("#add_gradeList, #edit_gradeList, #add_clazzList, #edit_clazzList").combobox({
+	  	$("#add_clazzList, #edit_clazzList").combobox({
 	  		width: "200",
 	  		height: "30",
 	  		valueField: "id",
@@ -165,47 +144,18 @@
 	  		editable: false, //不可编辑
 	  		method: "post",
 	  	});
-	  	
-	  	$("#add_gradeList").combobox({
-	  		url: "GradeServlet?method=GradeList&t="+new Date().getTime(),
-	  		onChange: function(newValue, oldValue){
-	  			//加载该年级下的班级
-	  			$("#add_clazzList").combobox("clear");
-	  			$("#add_clazzList").combobox("options").queryParams = {gradeid: newValue};
-	  			$("#add_clazzList").combobox("reload");
-	  		},
-			onLoadSuccess: function(){
-				//默认选择第一条数据
-				var data = $(this).combobox("getData");
-				$(this).combobox("setValue", data[0].id);
-	  		}
-	  	});
+
 	  	$("#add_clazzList").combobox({
-	  		url: "ClazzServlet?method=ClazzList&t="+new Date().getTime(),
+	  		url: "ClazzServlet?method=getClazzList&t="+new Date().getTime(),
 	  		onLoadSuccess: function(){
 		  		//默认选择第一条数据
 				var data = $(this).combobox("getData");;
 				$(this).combobox("setValue", data[0].id);
 	  		}
 	  	});
-	  	
-	  	$("#edit_gradeList").combobox({
-	  		url: "GradeServlet?method=GradeList&t="+new Date().getTime(),
-	  		onChange: function(newValue, oldValue){
-	  			//加载该年级下的班级
-	  			$("#edit_clazzList").combobox("clear");
-	  			$("#edit_clazzList").combobox("options").queryParams = {gradeid: newValue};
-	  			$("#edit_clazzList").combobox("reload");
-	  		},
-			onLoadSuccess: function(){
-				//默认选择第一条数据
-				var data = $(this).combobox("getData");
-				$(this).combobox("setValue", data[0].id);
-	  		}
-	  	});
-	  	
+
 	  	$("#edit_clazzList").combobox({
-	  		url: "ClazzServlet?method=ClazzList&t="+new Date().getTime(),
+	  		url: "ClazzServlet?method=getClazzList&t="+new Date().getTime(),
 			onLoadSuccess: function(){
 				//默认选择第一条数据
 				var data = $(this).combobox("getData");
@@ -390,8 +340,6 @@
 		<div style="float: left;"><a id="edit" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改</a></div>
 			<div style="float: left;" class="datagrid-btn-separator"></div>
 		<div style="float: left;"><a id="delete" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-some-delete',plain:true">删除</a></div>
-		
-		<div style="float: left; margin: 0 10px 0 10px">年级：<input id="gradeList" class="easyui-textbox" name="grade" /></div>
 		<div style="margin-left: 10px;">班级：<input id="clazzList" class="easyui-textbox" name="clazz" /></div>
 	
 	</div>
@@ -424,10 +372,6 @@
 	    		<tr>
 	    			<td>QQ:</td>
 	    			<td><input id="add_qq" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="qq" validType="number" /></td>
-	    		</tr>
-	    		<tr>
-	    			<td>年级:</td>
-	    			<td><input id="add_gradeList" style="width: 200px; height: 30px;" class="easyui-textbox" name="gradeid" /></td>
 	    		</tr>
 	    		<tr>
 	    			<td>班级:</td>

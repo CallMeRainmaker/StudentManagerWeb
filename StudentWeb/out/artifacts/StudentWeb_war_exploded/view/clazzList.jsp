@@ -26,7 +26,7 @@
 	        pagination: true,//分页控件 
 	        rownumbers: true,//行号 
 	        sortName: 'id',
-	        sortOrder: 'DESC', 
+	        sortOrder: 'DESC',
 	        remoteSort: false,
 	        columns: [[  
 				{field:'chk',checkbox: true,width:50},

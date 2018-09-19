@@ -75,8 +75,8 @@ public class ClazzServlet extends HttpServlet {
 
     private void getClazzList(HttpServletRequest request,HttpServletResponse response) throws IOException{
         String name = request.getParameter("clazzName");
-        Integer currentPage = Integer.parseInt(request.getParameter("page"));
-        Integer pageSize = Integer.parseInt(request.getParameter("rows"));
+        Integer currentPage = request.getParameter("page") == null ? 1: Integer.parseInt(request.getParameter("page"));
+        Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 
         Clazz clazz = new Clazz();
         clazz.setName(name);
