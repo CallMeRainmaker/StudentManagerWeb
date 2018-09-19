@@ -249,7 +249,6 @@
 	<!-- 添加窗口 -->
 	<div id="addDialog" style="padding: 10px">  
     	<form id="addForm" method="post">
-		<input type="hidden" id="edit-id" name="id">
 	    	<table cellpadding="8" >
 	    		<tr>
 	    			<td>班级名称:</td>
@@ -268,6 +267,7 @@
 	<!-- 编辑窗口 -->
 	<div id="editDialog" style="padding: 10px">
 		<form id="editForm" method="post">
+			<input type="hidden" id="edit-id" name="id">
 			<table cellpadding="8" >
 				<tr>
 					<td>班级名称:</td>

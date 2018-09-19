@@ -29,7 +29,16 @@ public class ClazzServlet extends HttpServlet {
             addClass(request,response);
         }else if("DeleteClazz".equals(method)){
             deleteClazz(request,response);
+        }else if("EditClazz".equals(method)){
+            editClazz(request,response);
         }
+    }
+
+    private void editClazz(HttpServletRequest request, HttpServletResponse response) {
+        String name = request.getParameter("name");
+        String info = request.getParameter("info");
+        Integer id = Integer.parseInt(request.getParameter("clazzid"));
+
     }
 
     private void deleteClazz(HttpServletRequest request, HttpServletResponse response) {
