@@ -60,4 +60,9 @@ public class ClazzDao extends BaseDao {
         return update(sql);
     }
 
+    public boolean editClazz(Clazz clazz){
+        String sql = "update clazz set name = '"+clazz.getName()+"',info = '"+clazz.getInfo()+"' where id = "+clazz.getId();
+        return update(sql);
+    }
+
 }

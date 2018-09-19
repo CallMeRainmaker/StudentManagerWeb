@@ -37,10 +37,20 @@ public class ClazzServlet extends HttpServlet {
     private void editClazz(HttpServletRequest request, HttpServletResponse response) {
         String name = request.getParameter("name");
         String info = request.getParameter("info");
-        Integer id = Integer.parseInt(request.getParameter("clazzid"));
-
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        Clazz clazz = new Clazz();
+        clazz.setName(name);
+        clazz.setInfo(info);
+        clazz.setId(id);
+        ClazzDao clazzDao = new ClazzDao();
+        if (clazzDao.editClazz(clazz)) {
+            try {
+                response.getWriter().write("success");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
-
     private void deleteClazz(HttpServletRequest request, HttpServletResponse response) {
         Integer clazzidid = Integer.parseInt(request.getParameter("clazzid"));
         ClazzDao clazzDao = new ClazzDao();
