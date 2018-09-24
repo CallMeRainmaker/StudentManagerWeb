@@ -30,11 +30,8 @@
                         {"menuid":"31","menuname":"教师列表","icon":"icon-user-teacher","url":"TeacherServlet?method=toTeacherListView"},
                     ]
                 },
-
                 {"menuid":"5","icon":"","menuname":"系统管理",
                     "menus":[
-                        {"menuid":"51","menuname":"系统设置","icon":"icon-set","url":"SystemServlet?method=toAdminPersonalView"},
-                        {"menuid":"51","menuname":"用户管理","icon":"icon-set","url":"SystemServlet?method=toAdminPersonalView"},
                         {"menuid":"51","menuname":"修改密码","icon":"icon-set","url":"SystemServlet?method=toAdminPersonalView"},
                     ]
                 }

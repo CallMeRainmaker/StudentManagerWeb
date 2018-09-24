@@ -13,8 +13,6 @@ public class SystemServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException{
-        HttpSession session = request.getSession();
-
         try{
             request.getRequestDispatcher("view/system.jsp").forward(request,response);
         }catch (ServletException e){
