@@ -34,11 +34,11 @@
                     {field:'number',title:'学号',width:200, sortable: true},
                     {field:'name',title:'姓名',width:200},
                     {field:'sex',title:'性别',width:100},
-                    {field:'phone',title:'电话',width:150},
+                    {field:'mobile',title:'电话',width:150},
                     {field:'qq',title:'QQ',width:150},
-                    {field:'clazz',title:'班级',width:150,
+                    {field:'clazz_id',title:'班级',width:150,
                         formatter: function(value,row,index){
-                            if (row.clazz){
+                            if (row.clazzid){
                                 return row.clazz.name;
                             } else {
                                 return value;
@@ -195,7 +195,7 @@
                                             $("#add_qq").textbox('setValue', "");
 
                                             //重新刷新页面数据
-                                            $('#dataList').datagrid("options").queryParams = {clazzid: clazzid};
+                                            // $('#dataList').datagrid("options").queryParams = {clazzid: clazzid};
                                             $('#dataList').datagrid("reload");
                                             setTimeout(function(){
                                                 $("#clazzList").combobox('setValue', clazzid);
