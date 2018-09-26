@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -31,22 +32,35 @@
                 columns: [[
                     {field:'chk',checkbox: true,width:50},
                     {field:'id',title:'ID',width:50, sortable: true},
-                    {field:'number',title:'学号',width:200, sortable: true},
+                    {field:'sn',title:'学号',width:200, sortable: true},
                     {field:'name',title:'姓名',width:200},
                     {field:'sex',title:'性别',width:100},
                     {field:'mobile',title:'电话',width:150},
                     {field:'qq',title:'QQ',width:150},
                     {field:'clazz_id',title:'班级',width:150,
                         formatter: function(value,row,index){
-                            if (row.clazzid){
-                                return row.clazz.name;
+                            if (row.clazzId){
+                                var clazzList = $("#clazzList").combobox("getData");
+                                for(var i=0;i<clazzList.length;i++ ){
+                                    //console.log(clazzList[i]);
+                                    if(row.clazzId == clazzList[i].id)return clazzList[i].name;
+                                }
+                                return row.clazzId;
                             } else {
-                                return value;
+                                return 'not found';
                             }
                         }
                     },
+
                 ]],
-                toolbar: "#toolbar"
+                toolbar: "#toolbar",
+                onBeforeLoad : function(){
+                    try{
+                        $("#clazzList").combobox("getData")
+                    }catch(err){
+                        preLoadClazz();
+                    }
+                }
             });
             //设置分页控件
             var p = $('#dataList').datagrid('getPager');
@@ -79,7 +93,7 @@
                 } else{
                     var numbers = [];
                     $(selectRows).each(function(i, row){
-                        numbers[i] = row.number;
+                        numbers[i] = row.sn;
                     });
                     var ids = [];
                     $(selectRows).each(function(i, row){
@@ -90,7 +104,7 @@
                             $.ajax({
                                 type: "post",
                                 url: "StudentServlet?method=DeleteStudent",
-                                data: {numbers: numbers, ids: ids},
+                                data: {sns: numbers, ids: ids},
                                 success: function(msg){
                                     if(msg == "success"){
                                         $.messager.alert("消息提醒","删除成功!","info");
@@ -108,8 +122,9 @@
                 }
             });
 
+
             //班级下拉框
-            $("#clazzList").combobox({
+            /*$("#clazzList").combobox({
                 width: "150",
                 height: "25",
                 valueField: "id",
@@ -117,13 +132,31 @@
                 multiple: false, //可多选
                 editable: false, //不可编辑
                 method: "post",
-                url: "ClazzServlet?method=getClazzList&t="+new Date().getTime(),
+                url: "ClazzServlet?method=getClazzList&t="+new Date().getTime()+"&from=combox",
                 onChange: function(newValue, oldValue){
                     //加载班级下的学生
                     $('#dataList').datagrid("options").queryParams = {clazzid: newValue};
                     $('#dataList').datagrid("reload");
                 }
-            });
+            });*/
+
+            function preLoadClazz(){
+                $("#clazzList").combobox({
+                    width: "150",
+                    height: "25",
+                    valueField: "id",
+                    textField: "name",
+                    multiple: false, //可多选
+                    editable: false, //不可编辑
+                    method: "post",
+                    url: "ClazzServlet?method=getClazzList&t="+new Date().getTime()+"&from=combox",
+                    onChange: function(newValue, oldValue){
+                        //加载班级下的学生
+                        //$('#dataList').datagrid("options").queryParams = {clazzid: newValue};
+                        //$('#dataList').datagrid("reload");
+                    }
+                });
+            }
 
             //下拉框通用属性
             $("#add_clazzList, #edit_clazzList").combobox({
@@ -136,8 +169,9 @@
                 method: "post",
             });
 
+
             $("#add_clazzList").combobox({
-                url: "ClazzServlet?method=getClazzList&t="+new Date().getTime(),
+                url: "ClazzServlet?method=getClazzList&t="+new Date().getTime()+"&from=combox",
                 onLoadSuccess: function(){
                     //默认选择第一条数据
                     var data = $(this).combobox("getData");;
@@ -145,8 +179,10 @@
                 }
             });
 
+
+
             $("#edit_clazzList").combobox({
-                url: "ClazzServlet?method=getClazzList&t="+new Date().getTime(),
+                url: "ClazzServlet?method=getClazzList&t="+new Date().getTime()+"&from=combox",
                 onLoadSuccess: function(){
                     //默认选择第一条数据
                     var data = $(this).combobox("getData");
@@ -195,7 +231,7 @@
                                             $("#add_qq").textbox('setValue', "");
 
                                             //重新刷新页面数据
-                                            // $('#dataList').datagrid("options").queryParams = {clazzid: clazzid};
+                                            $('#dataList').datagrid("options").queryParams = {clazzid: clazzid};
                                             $('#dataList').datagrid("reload");
                                             setTimeout(function(){
                                                 $("#clazzList").combobox('setValue', clazzid);
@@ -215,10 +251,13 @@
                         plain: true,
                         iconCls:'icon-reload',
                         handler:function(){
+                            $("#add_number").textbox('setValue', "");
                             $("#add_name").textbox('setValue', "");
-                            $("#add_password").textbox('setValue', "");
                             $("#add_phone").textbox('setValue', "");
                             $("#add_qq").textbox('setValue', "");
+                            //重新加载年级
+                            $("#add_gradeList").combobox("clear");
+                            $("#add_gradeList").combobox("reload");
                         }
                     },
                 ]
@@ -262,6 +301,9 @@
                                             $("#dataList").datagrid("reload");
                                             $("#dataList").datagrid("uncheckAll");
 
+                                            setTimeout(function(){
+                                                $("#clazzList").combobox('setValue', clazzid);
+                                            }, 100);
 
                                         } else{
                                             $.messager.alert("消息提醒","更新失败!","warning");
@@ -282,28 +324,55 @@
                             $("#edit_sex").textbox('setValue', "男");
                             $("#edit_phone").textbox('setValue', "");
                             $("#edit_qq").textbox('setValue', "");
+                            $("#edit_gradeList").combobox("clear");
+                            $("#edit_gradeList").combobox("reload");
                         }
                     }
                 ],
                 onBeforeOpen: function(){
                     var selectRow = $("#dataList").datagrid("getSelected");
                     //设置值
-                    $("#edit_number").textbox('setValue', selectRow.number);
                     $("#edit_name").textbox('setValue', selectRow.name);
                     $("#edit_sex").textbox('setValue', selectRow.sex);
-                    $("#edit_phone").textbox('setValue', selectRow.phone);
+                    $("#edit_mobile").textbox('setValue', selectRow.mobile);
                     $("#edit_qq").textbox('setValue', selectRow.qq);
-                    $("#edit_photo").attr("src", "PhotoServlet?method=GetPhoto&type=2&number="+selectRow.number);
-                    var clazzid = selectRow.clazzid;
-                    $("#edit_gradeList").combobox('setValue', gradeid);
+                    $("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&sid="+selectRow.id);
+                    $("#edit-id").val(selectRow.id);
+                    $("#set-photo-id").val(selectRow.id);
+                    var clazzid = selectRow.clazzId;
                     setTimeout(function(){
                         $("#edit_clazzList").combobox('setValue', clazzid);
                     }, 100);
 
                 }
             });
+            //搜索按钮监听事件
+            $("#search-btn").click(function(){
+                $('#dataList').datagrid('load',{
+                    studentName: $('#search_student_name').val(),
+                    clazzid: $("#clazzList").combobox('getValue') == '' ? 0 : $("#clazzList").combobox('getValue')
+                });
+            });
+        });
+        //上传图片按钮事件
+        $("#upload-photo-btn").click(function(){
 
         });
+        function uploadPhoto(){
+            var action = $("#uploadForm").attr('action');
+            var pos = action.indexOf('sid');
+            if(pos != -1){
+                action = action.substring(0,pos-1);
+            }
+            $("#uploadForm").attr('action',action+'&sid='+$("#set-photo-id").val());
+            $("#uploadForm").submit();
+            setTimeout(function(){
+                var message =  $(window.frames["photo_target"].document).find("#message").text();
+                $.messager.alert("消息提醒",message,"info");
+
+                $("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&sid="+$("#set-photo-id").val());
+            }, 1500)
+        }
 	</script>
 </head>
 <body>
@@ -313,19 +382,26 @@
 </table>
 <!-- 工具栏 -->
 <div id="toolbar">
-	<div style="float: left;"><a id="add" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加</a></div>
-	<div style="float: left;" class="datagrid-btn-separator"></div>
+	<c:if test="${userType == 1 || userType == 3}">
+		<div style="float: left;"><a id="add" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">添加</a></div>
+		<div style="float: left;" class="datagrid-btn-separator"></div>
+	</c:if>
 	<div style="float: left;"><a id="edit" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改</a></div>
 	<div style="float: left;" class="datagrid-btn-separator"></div>
-	<div style="float: left;"><a id="delete" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-some-delete',plain:true">删除</a></div>
-	<div style="margin-left: 10px;">班级：<input id="clazzList" class="easyui-textbox" name="clazz" /></div>
+	<c:if test="${userType == 1 || userType == 3}">
+		<div style="float: left;"><a id="delete" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-some-delete',plain:true">删除</a></div>
+	</c:if>
+	<div style="float: left;margin-top:4px;" class="datagrid-btn-separator" >&nbsp;&nbsp;姓名：<input id="search_student_name" class="easyui-textbox" name="search_student_name" /></div>
+	<div style="margin-left: 10px;margin-top:4px;" >班级：<input id="clazzList" class="easyui-textbox" name="clazz" />
+		<a id="search-btn" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
+	</div>
 
 </div>
 
 <!-- 添加学生窗口 -->
 <div id="addDialog" style="padding: 10px">
 	<div style="float: right; margin: 20px 20px 0 0; width: 200px; border: 1px solid #EBF3FF" id="photo">
-		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="photo/student.jpg" />
+		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=getPhoto" />
 	</div>
 	<form id="addForm" method="post">
 		<table cellpadding="8" >
@@ -337,7 +413,7 @@
 			<tr>
 				<td>密码:</td>
 				<td>
-					<input id="add_password"  class="easyui-textbox" style="width: 200px; height: 30px;" type="text" name="password" data-options="required:true, validType:'repeat', missingMessage:'请输入密码'" />
+					<input id="add_password"  class="easyui-textbox" style="width: 200px; height: 30px;" type="password" name="password" data-options="required:true, missingMessage:'请输入登录密码'" />
 				</td>
 			</tr>
 			<tr>
@@ -346,7 +422,7 @@
 			</tr>
 			<tr>
 				<td>电话:</td>
-				<td><input id="add_mobile" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="mobile" validType="mobile" /></td>
+				<td><input id="add_phone" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="mobile" validType="mobile" /></td>
 			</tr>
 			<tr>
 				<td>QQ:</td>
@@ -364,15 +440,16 @@
 <div id="editDialog" style="padding: 10px">
 	<div style="float: right; margin: 20px 20px 0 0; width: 200px; border: 1px solid #EBF3FF">
 		<img id="edit_photo" alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="" />
+		<form id="uploadForm" method="post" enctype="multipart/form-data" action="PhotoServlet?method=SetPhoto" target="photo_target">
+			<!-- StudentServlet?method=SetPhoto -->
+			<input type="hidden" name="sid" id="set-photo-id">
+			<input class="easyui-filebox" name="photo" data-options="prompt:'选择照片'" style="width:200px;">
+			<input id="upload-photo-btn" onClick="uploadPhoto()" class="easyui-linkbutton" style="width: 50px; height: 24px;" type="button" value="上传"/>
+		</form>
 	</div>
 	<form id="editForm" method="post">
+		<input type="hidden" name="id" id="edit-id">
 		<table cellpadding="8" >
-			<tr>
-				<td>学号:</td>
-				<td>
-					<input id="edit_number" data-options="readonly: true" class="easyui-textbox" style="width: 200px; height: 30px;" type="text" name="number" data-options="required:true, validType:'repeat', missingMessage:'请输入学号'" />
-				</td>
-			</tr>
 			<tr>
 				<td>姓名:</td>
 				<td><input id="edit_name" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="name" data-options="required:true, missingMessage:'请填写姓名'" /></td>
@@ -383,7 +460,7 @@
 			</tr>
 			<tr>
 				<td>电话:</td>
-				<td><input id="edit_phone" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="phone" validType="mobile" /></td>
+				<td><input id="edit_mobile" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="mobile" validType="mobile" /></td>
 			</tr>
 			<tr>
 				<td>QQ:</td>
@@ -396,6 +473,7 @@
 		</table>
 	</form>
 </div>
-
+<!-- 提交表单处理iframe框架 -->
+<iframe id="photo_target" name="photo_target"></iframe>
 </body>
 </html>
