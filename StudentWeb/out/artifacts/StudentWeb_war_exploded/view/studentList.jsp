@@ -23,7 +23,7 @@
                 method: "post",
                 url:"StudentServlet?method=StudentList&t="+new Date().getTime(),
                 idField:'id',
-                singleSelect:false,//是否单选
+                singleSelect:true,//是否单选
                 pagination:true,//分页控件
                 rownumbers:true,//行号
                 sortName:'id',
@@ -403,7 +403,7 @@
 <!-- 添加学生窗口 -->
 <div id="addDialog" style="padding: 10px">
 	<div style="float: right; margin: 20px 20px 0 0; width: 200px; border: 1px solid #EBF3FF" id="photo">
-		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=getPhoto" />
+		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=GetPhoto" />
 	</div>
 	<form id="addForm" method="post">
 		<table cellpadding="8" >

@@ -1,6 +1,5 @@
 package com.ischoolbar.programmer.dao;
 
-import com.ischoolbar.programmer.model.Clazz;
 import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
 import com.ischoolbar.programmer.util.StringUtil;
@@ -11,6 +10,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDao extends BaseDao {
+    public Student getStudent(int id){
+        String sql = "select * from student where id = " + id;
+        Student student = null;
+        ResultSet resultSet = query(sql);
+        try {
+            if(resultSet.next()){
+                student = new Student();
+                student.setId(resultSet.getInt("id"));
+                student.setClazzId(resultSet.getInt("clazz_id"));
+                student.setMobile(resultSet.getString("mobile"));
+                student.setName(resultSet.getString("name"));
+                student.setPassword(resultSet.getString("password"));
+                student.setPhoto(resultSet.getBinaryStream("photo"));
+                student.setQq(resultSet.getString("qq"));
+                student.setSex(resultSet.getString("sex"));
+                student.setNumber(resultSet.getString("number"));
+                return student;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return student;
+    }
+
     public boolean deleteStudent(int id){
         String sql = "delete from student where id = "+id;
         return update(sql);
