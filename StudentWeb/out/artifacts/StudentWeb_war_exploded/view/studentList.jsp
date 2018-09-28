@@ -86,25 +86,27 @@
             });
             //删除
             $("#delete").click(function(){
-                var selectRows = $("#dataList").datagrid("getSelections");
-                var selectLength = selectRows.length;
-                if(selectLength == 0){
+                var selectRow = $("#dataList").datagrid("getSelected");
+                // var selectLength = selectRows.length;
+                if(selectRow == 0){
                     $.messager.alert("消息提醒", "请选择数据进行删除!", "warning");
                 } else{
-                    var numbers = [];
-                    $(selectRows).each(function(i, row){
-                        numbers[i] = row.sn;
-                    });
-                    var ids = [];
-                    $(selectRows).each(function(i, row){
-                        ids[i] = row.id;
-                    });
+                    // var numbers = [];
+                    // $(selectRows).each(function(i, row){
+                    //     numbers[i] = row.sn;
+                    // });
+                    // var ids = [];
+                    // $(selectRows).each(function(i, row){
+                    //     ids[i] = row.id;
+                    // });
+					var id = selectRow.id;
                     $.messager.confirm("消息提醒", "将删除与学生相关的所有数据(包括成绩)，确认继续？", function(r){
                         if(r){
                             $.ajax({
                                 type: "post",
                                 url: "StudentServlet?method=DeleteStudent",
-                                data: {sns: numbers, ids: ids},
+								//data: {sns: numbers, ids: ids},
+								data:{id:id},
                                 success: function(msg){
                                     if(msg == "success"){
                                         $.messager.alert("消息提醒","删除成功!","info");

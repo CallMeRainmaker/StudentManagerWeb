@@ -52,9 +52,9 @@ public class ClazzServlet extends HttpServlet {
         }
     }
     private void deleteClazz(HttpServletRequest request, HttpServletResponse response) {
-        Integer clazzidid = Integer.parseInt(request.getParameter("clazzid"));
+        Integer clazzid = Integer.parseInt(request.getParameter("clazzid"));
         ClazzDao clazzDao = new ClazzDao();
-        if(clazzDao.deleteClazz(clazzidid)){
+        if(clazzDao.deleteClazz(clazzid)){
             try{
                 response.getWriter().write("success");
             }catch (IOException e){

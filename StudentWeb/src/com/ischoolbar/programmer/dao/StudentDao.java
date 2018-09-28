@@ -11,6 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDao extends BaseDao {
+    public boolean deleteStudent(int id){
+        String sql = "delete from student where id = "+id;
+        return update(sql);
+    }
+
     public boolean editStudent(Student student){
         String sql = "update student set name = '"+student.getName()+"'";
         sql += ",sex = '"+student.getSex()+"',mobile = '"+student.getMobile()+"'";

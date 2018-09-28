@@ -30,6 +30,20 @@ public class StudentServlet extends HttpServlet {
             getStudentList(request,response);
         }else if("EditStudent".equals(method)){
             editStudent(request,response);
+        }else if("DeleteStudent".equals(method)){
+            deleteStudent(request,response);
+        }
+    }
+
+    private void deleteStudent(HttpServletRequest request, HttpServletResponse response) {
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        StudentDao studentDao = new StudentDao();
+        if(studentDao.deleteStudent(id)){
+            try {
+                response.getWriter().write("success");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
