@@ -11,6 +11,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDao extends BaseDao {
+    public boolean editStudent(Student student){
+        String sql = "update student set name = '"+student.getName()+"'";
+        sql += ",sex = '"+student.getSex()+"',mobile = '"+student.getMobile()+"'";
+        sql += ",qq = '"+student.getQq()+"',clazz_id = '"+student.getClazzId()+"'";
+        sql += "where id = '"+student.getId()+"'";
+        return update(sql);
+    }
+
     public boolean addStudent(Student student){
         String sql = "insert into student values(null,'"+student.getNumber()+"','"+student.getName()+"'";
         sql += ",'" + student.getPassword() + "'," + student.getClazzId();
