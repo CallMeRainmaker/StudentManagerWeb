@@ -4,6 +4,8 @@ import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
 import com.ischoolbar.programmer.util.StringUtil;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -44,6 +46,19 @@ public class StudentDao extends BaseDao {
         sql += ",sex = '"+student.getSex()+"',mobile = '"+student.getMobile()+"'";
         sql += ",qq = '"+student.getQq()+"',clazz_id = '"+student.getClazzId()+"'";
         sql += "where id = '"+student.getId()+"'";
+        return update(sql);
+    }
+
+    public boolean setStudentPhoto(Student student){
+        String sql = "update student set photo = ?";
+        Connection connection = getConnention();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setBinaryStream(1,student.getPhoto());
+            return preparedStatement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return update(sql);
     }
 

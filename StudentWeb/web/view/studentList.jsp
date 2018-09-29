@@ -45,7 +45,7 @@
                                     //console.log(clazzList[i]);
                                     if(row.clazzId == clazzList[i].id)return clazzList[i].name;
                                 }
-                                return row.clazzId;
+                                return clazzList[i].name;
                             } else {
                                 return 'not found';
                             }
@@ -257,9 +257,6 @@
                             $("#add_name").textbox('setValue', "");
                             $("#add_phone").textbox('setValue', "");
                             $("#add_qq").textbox('setValue', "");
-                            //重新加载年级
-                            $("#add_gradeList").combobox("clear");
-                            $("#add_gradeList").combobox("reload");
                         }
                     },
                 ]
@@ -326,8 +323,6 @@
                             $("#edit_sex").textbox('setValue', "男");
                             $("#edit_phone").textbox('setValue', "");
                             $("#edit_qq").textbox('setValue', "");
-                            $("#edit_gradeList").combobox("clear");
-                            $("#edit_gradeList").combobox("reload");
                         }
                     }
                 ],
@@ -338,7 +333,7 @@
                     $("#edit_sex").textbox('setValue', selectRow.sex);
                     $("#edit_mobile").textbox('setValue', selectRow.mobile);
                     $("#edit_qq").textbox('setValue', selectRow.qq);
-                    $("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&sid="+selectRow.id);
+                    $("#edit_photo").attr("src", "PhotoServlet?method=GetPhoto&type=2&sid="+selectRow.id);
                     $("#edit-id").val(selectRow.id);
                     $("#set-photo-id").val(selectRow.id);
                     var clazzid = selectRow.clazzId;
@@ -372,7 +367,7 @@
                 var message =  $(window.frames["photo_target"].document).find("#message").text();
                 $.messager.alert("消息提醒",message,"info");
 
-                $("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&sid="+$("#set-photo-id").val());
+                $("#edit_photo").attr("src", "PhotoServlet?method=GetPhoto&sid="+$("#set-photo-id").val());
             }, 1500)
         }
 	</script>
@@ -403,6 +398,7 @@
 <!-- 添加学生窗口 -->
 <div id="addDialog" style="padding: 10px">
 	<div style="float: right; margin: 20px 20px 0 0; width: 200px; border: 1px solid #EBF3FF" id="photo">
+		<input type="hidden" name="sid">
 		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=GetPhoto" />
 	</div>
 	<form id="addForm" method="post">
@@ -444,7 +440,7 @@
 		<img id="edit_photo" alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="" />
 		<form id="uploadForm" method="post" enctype="multipart/form-data" action="PhotoServlet?method=SetPhoto" target="photo_target">
 			<!-- StudentServlet?method=SetPhoto -->
-			<input type="hidden" name="sid" id="set-photo-id">
+			<input type="hidden" name="id" id="set-photo-id">
 			<input class="easyui-filebox" name="photo" data-options="prompt:'选择照片'" style="width:200px;">
 			<input id="upload-photo-btn" onClick="uploadPhoto()" class="easyui-linkbutton" style="width: 50px; height: 24px;" type="button" value="上传"/>
 		</form>
