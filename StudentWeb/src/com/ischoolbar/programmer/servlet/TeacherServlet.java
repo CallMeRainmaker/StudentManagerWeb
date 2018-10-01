@@ -15,15 +15,27 @@ public class TeacherServlet extends HttpServlet {
         String method = request.getParameter("method");
         if("toTeacherListView".equals(method)){
             TeacherList(request,response);
-//        }else if("AddTeacher".equals(method)){
-//            addTeacher(request,response);
-//        }else if("TeacherList".equals(method)){
-//            getTeacherList(request,response);
-//        }else if("EditTeacher".equals(method)){
-//            editTeacher(request,response);
-//        }else if("DeleteTeacher".equals(method)){
-//            deleteTeacher(request,response);
+        }else if("AddTeacher".equals(method)){
+            addTeacher(request,response);
+        }else if("TeacherList".equals(method)){
+            getTeacherList(request,response);
+        }else if("EditTeacher".equals(method)){
+            editTeacher(request,response);
+        }else if("DeleteTeacher".equals(method)){
+            deleteTeacher(request,response);
         }
+    }
+
+    private void deleteTeacher(HttpServletRequest request, HttpServletResponse response) {
+    }
+
+    private void getTeacherList(HttpServletRequest request, HttpServletResponse response) {
+    }
+
+    private void editTeacher(HttpServletRequest request, HttpServletResponse response) {
+    }
+
+    private void addTeacher(HttpServletRequest request, HttpServletResponse response) {
     }
 
     private void TeacherList(HttpServletRequest request, HttpServletResponse response) {

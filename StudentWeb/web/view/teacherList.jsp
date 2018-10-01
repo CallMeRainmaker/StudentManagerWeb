@@ -167,8 +167,7 @@
 							var sex = $("#add_sex").textbox("getText");
 							var phone = $("#add_phone").textbox("getText");
 							var qq = $("#add_qq").textbox("getText");
-							var password = $("#add_password").textbox("getText");
-							var data = {clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,password:password};
+							var data = {clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,};
 							
 							$.ajax({
 								type: "post",
@@ -408,7 +407,7 @@
 	<!-- 添加窗口 -->
 	<div id="addDialog" style="padding: 10px;">  
    		<div style=" position: absolute; margin-left: 560px; width: 200px; border: 1px solid #EEF4FF" id="photo">
-    		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=getPhoto" />
+    		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=GetPhoto" />
 	    </div> 
    		<form id="addForm" method="post">
 	    	<table id="addTable" border=0 style="width:800px; table-layout:fixed;" cellpadding="6" >
@@ -423,11 +422,6 @@
 	    			<td>姓名:</td>
 	    			<td colspan="4"><input id="add_name" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="name" data-options="required:true, missingMessage:'请填写姓名'" /></td>
 	    		</tr>
-	    		<tr>
-	    			<td>密码:</td>
-	    			<td colspan="4"><input id="add_password" style="width: 200px; height: 30px;" class="easyui-textbox" type="password" name="password" data-options="required:true, missingMessage:'请填写密码'" /></td>
-	    		</tr>
-	    		<tr>
 	    			<td>性别:</td>
 	    			<td colspan="4"><select id="add_sex" class="easyui-combobox" data-options="editable: false, panelHeight: 50, width: 60, height: 30" name="sex"><option value="男">男</option><option value="女">女</option></select></td>
 	    		</tr>
