@@ -164,10 +164,11 @@
 						} else{
 							var clazzid = $("#add_clazzList").combobox("getValue");
 							var name = $("#add_name").textbox("getText");
+							var password = $("#add_password").textbox("getText");
 							var sex = $("#add_sex").textbox("getText");
-							var phone = $("#add_phone").textbox("getText");
+							var mobile = $("#add_mobile").textbox("getText");
 							var qq = $("#add_qq").textbox("getText");
-							var data = {clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,};
+							var data = {clazzid:clazzid, name:name,password:password,sex:sex,mobile:mobile,qq:qq,};
 							
 							$.ajax({
 								type: "post",
@@ -182,7 +183,7 @@
 										$("#add_number").textbox('setValue', "");
 										$("#add_name").textbox('setValue', "");
 										$("#add_sex").textbox('setValue', "男");
-										$("#add_phone").textbox('setValue', "");
+										$("#add_mobile").textbox('setValue', "");
 										$("#add_qq").textbox('setValue', "");
 										$(table).find(".chooseTr").remove();
 										
@@ -205,7 +206,7 @@
 					handler:function(){
 						$("#add_number").textbox('setValue', "");
 						$("#add_name").textbox('setValue', "");
-						$("#add_phone").textbox('setValue', "");
+						$("#add_mobile").textbox('setValue', "");
 						$("#add_qq").textbox('setValue', "");
 						
 						$(table).find(".chooseTr").remove();
@@ -216,7 +217,7 @@
 			onClose: function(){
 				$("#add_number").textbox('setValue', "");
 				$("#add_name").textbox('setValue', "");
-				$("#add_phone").textbox('setValue', "");
+				$("#add_mobile").textbox('setValue', "");
 				$("#add_qq").textbox('setValue', "");
 				
 				$(table).find(".chooseTr").remove();
@@ -422,12 +423,16 @@
 	    			<td>姓名:</td>
 	    			<td colspan="4"><input id="add_name" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="name" data-options="required:true, missingMessage:'请填写姓名'" /></td>
 	    		</tr>
+				<tr>
+					<td>密码:</td>
+					<td colspan="4"><input id="add_password" style="width: 200px; height: 30px;" class="easyui-textbox" type="password" name="password" data-options="required:true, missingMessage:'请填写密码'" /></td>
+				</tr>
 	    			<td>性别:</td>
 	    			<td colspan="4"><select id="add_sex" class="easyui-combobox" data-options="editable: false, panelHeight: 50, width: 60, height: 30" name="sex"><option value="男">男</option><option value="女">女</option></select></td>
 	    		</tr>
 	    		<tr>
 	    			<td>电话:</td>
-	    			<td colspan="4"><input id="add_phone" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="phone" validType="mobile" /></td>
+	    			<td colspan="4"><input id="add_mobile" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="mobile" validType="mobile" /></td>
 	    		</tr>
 	    		<tr>
 	    			<td>QQ:</td>

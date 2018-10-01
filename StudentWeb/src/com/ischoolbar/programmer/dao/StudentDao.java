@@ -84,10 +84,10 @@ public class StudentDao extends BaseDao {
         try {
             while(resultSet.next()){
                 Student st = new Student();
-                st .setId(resultSet.getInt("id"));
+                st.setId(resultSet.getInt("id"));
                 st.setClazzId(resultSet.getInt("clazz_id"));
-                st .setMobile(resultSet.getString("mobile"));
-                st .setName(resultSet.getString("name"));
+                st.setMobile(resultSet.getString("mobile"));
+                st.setName(resultSet.getString("name"));
                 st.setPassword(resultSet.getString("password"));
                 st.setQq(resultSet.getString("qq"));
                 st.setSex(resultSet.getString("sex"));

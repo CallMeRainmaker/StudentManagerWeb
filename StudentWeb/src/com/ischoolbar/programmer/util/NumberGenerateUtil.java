@@ -8,4 +8,10 @@ public class NumberGenerateUtil {
         number = "S" + classid + System.currentTimeMillis();
         return number;
     }
+
+    public static String TeacherNumberGenerate(int classid){
+        String number = "";
+        number = "T" + classid + System.currentTimeMillis();
+        return number;
+    }
 }

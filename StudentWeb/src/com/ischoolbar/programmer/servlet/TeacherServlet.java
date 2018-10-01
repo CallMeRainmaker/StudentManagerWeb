@@ -1,10 +1,20 @@
 package com.ischoolbar.programmer.servlet;
 
+import com.ischoolbar.programmer.dao.TeacherDao;
+import com.ischoolbar.programmer.model.Page;
+import com.ischoolbar.programmer.model.Student;
+import com.ischoolbar.programmer.model.Teacher;
+import com.ischoolbar.programmer.util.NumberGenerateUtil;
+import net.sf.json.JSONArray;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class TeacherServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException{
@@ -30,12 +40,54 @@ public class TeacherServlet extends HttpServlet {
     }
 
     private void getTeacherList(HttpServletRequest request, HttpServletResponse response) {
+        String name = request.getParameter("name");
+        Integer currentPage = request.getParameter("page") == null ? 1: Integer.parseInt(request.getParameter("page"));
+        Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
+        Integer clazz = request.getParameter("clazz_id") == null ? 0 : Integer.parseInt(request.getParameter("clazz_id"));
+        Teacher teacher = new Teacher();
+        teacher.setName(name);
+        teacher.setClazz_id(clazz);
+        TeacherDao teacherDao = new TeacherDao();
+        List<Teacher> teachers = teacherDao.getTeacherList(teacher,new Page(currentPage,pageSize));
+        int total = teacherDao.getTeacherTotal(teacher);
+        response.setCharacterEncoding("UTF-8");
+        Map<String,Object> ret = new HashMap<>();
+        ret.put("tatal",total);
+        ret.put("rows",teachers);
+        try{
+            response.getWriter().write(JSONArray.fromObject(teachers).toString());
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+
     }
 
     private void editTeacher(HttpServletRequest request, HttpServletResponse response) {
     }
 
     private void addTeacher(HttpServletRequest request, HttpServletResponse response) {
+        int clazzid = Integer.parseInt(request.getParameter("clazzid"));
+        String name = request.getParameter("name");
+        String password = request.getParameter("password");
+        String sex = request.getParameter("sex");
+        String mobile = request.getParameter("mobile");
+        String qq = request.getParameter("qq");
+        Teacher teacher = new Teacher();
+        teacher.setClazz_id(clazzid);
+        teacher.setName(name);
+        teacher.setSex(sex);
+        teacher.setMobile(mobile);
+        teacher.setQq(qq);
+        teacher.setNumber(NumberGenerateUtil.TeacherNumberGenerate(clazzid));
+        TeacherDao teacherDao = new TeacherDao();
+        if(teacherDao.addTeacher(teacher)){
+            try {
+                response.getWriter().write("success");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void TeacherList(HttpServletRequest request, HttpServletResponse response) {
