@@ -10,128 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc1d5c1c-2128-4cf3-b33c-33568ae93c23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/StudentManagerWeb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/CpachaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/CpachaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CpachaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CpachaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/CpachaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/CpachaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/css/default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/css/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/jquery.easyui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/js/outlook2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/js/validateExtends.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/color.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/accordion.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/calendar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/combo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/combobox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/datagrid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/datalist.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/datebox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/dialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/easyui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/filebox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/accordion_arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/blank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/calendar_arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/combo_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/datagrid_icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/datebox_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/layout_arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/linkbutton_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/menu_arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/messager_icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/pagination_icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/panel_tools.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/searchbox_button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/slider_handle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/spinner_arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/tabs_icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/tree_icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/images/validatebox_warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/linkbutton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/menu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/menubutton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/messager.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/numberbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/pagination.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/panel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/progressbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/propertygrid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/searchbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/spinner.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/splitbutton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/tabs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/textbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/tooltip.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/tree.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/validatebox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/default/window.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/2012080412263.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/asterisk_orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/basket_remove.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/blank.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/book_add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/book_open_mark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/book_previous.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/cancel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/chart_bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/cut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/door_out.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/edit_add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/edit_remove.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/filesave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/filter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/find.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/folder_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/house.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_clipart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_picture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_shapes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/large_smartart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/mini_add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/mini_edit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/mini_refresh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/more.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/no.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/note.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/ok.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/pencil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/pencil_add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/print.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/redo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/reload.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/set.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/sum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/text_list_bullets.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/text_list_numbers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/tip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/undo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/user_add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/user_gray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/user_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/vcard_edit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/world.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/world_add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/world_night.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/icons/zoom_in.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classes/easyui/themes/locale/easyui-lang-zh_CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -226,9 +108,9 @@
     <session id="-1900534501">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="38" />
+          <entry key="project.closed" value="39" />
           <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.11" value="9" />
+          <entry key="project.open.time.11" value="10" />
           <entry key="project.open.time.12" value="6" />
           <entry key="project.open.time.13" value="9" />
           <entry key="project.open.time.16" value="2" />
@@ -243,7 +125,7 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="42" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -251,11 +133,11 @@
           <entry key="admin" value="3" />
           <entry key="css" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="97" />
+          <entry key="java" value="98" />
           <entry key="jpg" value="1" />
-          <entry key="jsp" value="35" />
+          <entry key="jsp" value="36" />
           <entry key="sql" value="4" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -264,28 +146,28 @@
           <entry key="Database Element" value="3" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="97" />
-          <entry key="JSP" value="35" />
+          <entry key="JAVA" value="98" />
+          <entry key="JSP" value="36" />
           <entry key="Scratch" value="4" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10727" />
+          <entry key="java" value="10878" />
           <entry key="jsp" value="1788" />
           <entry key="sql" value="18" />
           <entry key="txt" value="22" />
-          <entry key="xml" value="661" />
+          <entry key="xml" value="665" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10727" />
+          <entry key="JAVA" value="10878" />
           <entry key="JSP" value="1788" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="SQL" value="18" />
-          <entry key="XML" value="661" />
+          <entry key="XML" value="665" />
         </counts>
       </usages-collector>
     </session>
@@ -293,66 +175,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="92" column="35" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/PhotoServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="35" column="100" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
+            <state relative-caret-position="1897">
+              <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-451">
-              <caret line="37" column="90" selection-start-line="37" selection-start-column="90" selection-end-line="37" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            <state relative-caret-position="1230">
+              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
               <folding>
-                <element signature="e#931#932#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java">
+        <entry file="file://$PROJECT_DIR$/web/view/teacherList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="52" column="52" lean-forward="true" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="439" column="99" selection-start-line="439" selection-start-column="99" selection-end-line="439" selection-end-column="99" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="656">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -374,7 +221,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -403,11 +250,12 @@
         <option value="$PROJECT_DIR$/web/view/login.jsp" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ClazzServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/PhotoServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java" />
       </list>
     </option>
   </component>
@@ -443,9 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -469,13 +315,6 @@
               <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="programmer" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="programmer" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -489,10 +328,18 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="StudentWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -500,7 +347,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/huxudong/IdeaProjects/StudentManagerWeb/StudentWeb/src/com/ischoolbar/programmer/servlet/LoginServlet.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538228704148" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538366234261" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -511,19 +358,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/File" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/File" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/web/view" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/web/lib" />
       <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer" />
       <recent name="$PROJECT_DIR$/src/com/ischoolbar/programmer/util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/view" />
+      <recent name="$PROJECT_DIR$/web/File" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/File" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -690,17 +537,18 @@
       <workItem from="1538187448265" duration="4808000" />
       <workItem from="1538217731144" duration="26000" />
       <workItem from="1538217765337" duration="10775000" />
+      <workItem from="1538365476478" duration="761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170892000" />
+    <option name="totallyTimeSpent" value="171653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19399786" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19667739" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -710,7 +558,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989282" weight="0.5436554" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989282" weight="0.5434272" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -720,7 +568,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010718" side_tool="true" weight="0.76251453" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32596043" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32945284" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3298122" />
       <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32945284" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -925,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="87" column="10" lean-forward="true" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ClazzDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -967,10 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding>
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,24 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-447">
           <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding>
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,22 +827,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="52" column="52" lean-forward="true" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+        <state relative-caret-position="1763">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="17999">
           <caret line="439" column="99" selection-start-line="439" selection-start-column="99" selection-end-line="439" selection-end-column="99" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1034,10 +853,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
-          <caret line="37" column="90" selection-start-line="37" selection-start-column="90" selection-end-line="37" selection-end-column="90" />
+        <state relative-caret-position="462">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1897">
+          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/teacherList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
