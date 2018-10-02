@@ -15,6 +15,16 @@ public class TeacherDao extends BaseDao {
         return  update(sql);
     }
 
+    public boolean editTeacher(Teacher teacher){
+        String sql = "update teacher set name = '"+teacher.getName()+"'";
+        sql += ",clazz_id = '"+teacher.getClazz_id()+"'";
+        sql += ",sex = '"+teacher.getSex()+"'";
+        sql += ",mobile = '"+teacher.getMobile()+"'";
+        sql += ",qq = '"+teacher.getQq()+"'";
+        sql += " where id = '"+teacher.getId()+"'";
+        return update(sql);
+    }
+
     public boolean addTeacher(Teacher teacher){
         String sql = "insert into teacher values(null,'"+teacher.getNumber()+"','"+teacher.getName()+"'";
         sql += ",'" + teacher.getPassword() + "'," + teacher.getClazz_id();

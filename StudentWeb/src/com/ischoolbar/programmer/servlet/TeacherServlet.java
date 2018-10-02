@@ -73,6 +73,27 @@ public class TeacherServlet extends HttpServlet {
     }
 
     private void editTeacher(HttpServletRequest request, HttpServletResponse response) {
+        int clazzid = Integer.parseInt(request.getParameter("clazzid"));
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("name");
+        String sex = request.getParameter("sex");
+        String mobile = request.getParameter("mobile");
+        String qq = request.getParameter("qq");
+        Teacher teacher = new Teacher();
+        teacher.setClazz_id(clazzid);
+        teacher.setId(id);
+        teacher.setName(name);
+        teacher.setSex(sex);
+        teacher.setMobile(mobile);
+        teacher.setQq(qq);
+        TeacherDao teacherDao = new TeacherDao();
+        if(teacherDao.editTeacher(teacher)){
+            try {
+                response.getWriter().write("success");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void addTeacher(HttpServletRequest request, HttpServletResponse response) {
