@@ -34,20 +34,20 @@
 	        columns: [[  
 				{field:'chk',checkbox: true,width:50},
  		        {field:'id',title:'ID',width:50, sortable: true},    
- 		        {field:'sn',title:'工号',width:150, sortable: true},    
+ 		        {field:'number',title:'工号',width:150, sortable: true},
  		        {field:'name',title:'姓名',width:150},
  		        {field:'sex',title:'性别',width:100},
  		        {field:'mobile',title:'电话',width:150},
  		        {field:'qq',title:'QQ',width:150},
  		       	{field:'clazz_id',title:'班级',width:150, 
  		        	formatter: function(value,row,index){
- 						if (row.clazzId){
+ 						if (row.clazz_id){
  							var clazzList = $("#clazzList").combobox("getData");
  							for(var i=0;i<clazzList.length;i++ ){
  								//console.log(clazzList[i]);
- 								if(row.clazzId == clazzList[i].id)return clazzList[i].name;
+ 								if(row.clazz_id == clazzList[i].id)return clazzList[i].name;
  							}
- 							return row.clazzId;
+ 							return clazzList[i].name;
  						} else {
  							return 'not found';
  						}
@@ -357,7 +357,7 @@
 	  	$("#search-btn").click(function(){
 	  		$('#dataList').datagrid('load',{
 	  			teacherName: $('#search_student_name').val(),
-	  			clazzid: $("#clazzList").combobox('getValue') == '' ? 0 : $("#clazzList").combobox('getValue')
+	  			clazz_id: $("#clazzList").combobox('getValue') == '' ? 0 : $("#clazzList").combobox('getValue')
 	  		});
 	  	});
 	});

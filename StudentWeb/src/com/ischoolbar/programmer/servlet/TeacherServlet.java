@@ -40,7 +40,7 @@ public class TeacherServlet extends HttpServlet {
     }
 
     private void getTeacherList(HttpServletRequest request, HttpServletResponse response) {
-        String name = request.getParameter("name");
+        String name = request.getParameter("teacherName");
         Integer currentPage = request.getParameter("page") == null ? 1: Integer.parseInt(request.getParameter("page"));
         Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
         Integer clazz = request.getParameter("clazz_id") == null ? 0 : Integer.parseInt(request.getParameter("clazz_id"));
