@@ -25,7 +25,7 @@
 	        method: "post",
 	        url:"TeacherServlet?method=TeacherList&t="+new Date().getTime(),
 	        idField:'id', 
-	        singleSelect:false,//是否单选 
+	        singleSelect:true,//是否单选
 	        pagination:true,//分页控件 
 	        rownumbers:true,//行号 
 	        sortName:'id',
@@ -89,21 +89,22 @@
 	    });
 	    //删除
 	    $("#delete").click(function(){
-	    	var selectRows = $("#dataList").datagrid("getSelections");
-        	var selectLength = selectRows.length;
-        	if(selectLength == 0){
+	    	var selectRow = $("#dataList").datagrid("getSelected");
+        	//var selectLength = selectRows.length;
+        	if(selectRow == 0){
             	$.messager.alert("消息提醒", "请选择数据进行删除!", "warning");
             } else{
-            	var ids = [];
-            	$(selectRows).each(function(i, row){
-            		ids[i] = row.id;
-            	});
+            	// var ids = [];
+            	// $(selectRows).each(function(i, row){
+            	// 	ids[i] = row.id;
+            	// });
+				var id = selectRow.id;
             	$.messager.confirm("消息提醒", "将删除与教师相关的所有数据，确认继续？", function(r){
             		if(r){
             			$.ajax({
 							type: "post",
 							url: "TeacherServlet?method=DeleteTeacher",
-							data: {ids: ids},
+							data: {id:id},
 							success: function(msg){
 								if(msg == "success"){
 									$.messager.alert("消息提醒","删除成功!","info");

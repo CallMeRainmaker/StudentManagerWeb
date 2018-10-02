@@ -10,6 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeacherDao extends BaseDao {
+    public boolean deleteTeacher(int id){
+        String sql = "delete from teacher where id = "+id;
+        return  update(sql);
+    }
+
     public boolean addTeacher(Teacher teacher){
         String sql = "insert into teacher values(null,'"+teacher.getNumber()+"','"+teacher.getName()+"'";
         sql += ",'" + teacher.getPassword() + "'," + teacher.getClazz_id();

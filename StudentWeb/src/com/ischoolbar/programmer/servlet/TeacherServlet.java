@@ -37,6 +37,15 @@ public class TeacherServlet extends HttpServlet {
     }
 
     private void deleteTeacher(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        TeacherDao teacherDao = new TeacherDao();
+        if(teacherDao.deleteTeacher(id)){
+            try {
+                response.getWriter().write("success");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void getTeacherList(HttpServletRequest request, HttpServletResponse response) {
