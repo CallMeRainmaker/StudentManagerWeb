@@ -340,7 +340,7 @@
 				$("#edit_sex").textbox('setValue', selectRow.sex);
 				$("#edit_phone").textbox('setValue', selectRow.mobile);
 				$("#edit_qq").textbox('setValue', selectRow.qq);
-				$("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&tid="+selectRow.id);
+				$("#edit_photo").attr("src", "PhotoServlet?method=GetPhoto&type=2&tid="+selectRow.id);
 				$("#set-photo-id").val(selectRow.id);
 				var clazzid = selectRow.clazzId;
 				setTimeout(function(){
@@ -379,7 +379,7 @@
 			var message =  $(window.frames["photo_target"].document).find("#message").text();
 			$.messager.alert("消息提醒",message,"info");
 			
-			$("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&tid="+$("#set-photo-id").val());
+			$("#edit_photo").attr("src", "PhotoServlet?method=GetPhoto&tid="+$("#set-photo-id").val());
 		}, 1500)
 	}
 	</script>

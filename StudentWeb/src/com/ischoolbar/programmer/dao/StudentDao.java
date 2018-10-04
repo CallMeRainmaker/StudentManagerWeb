@@ -50,11 +50,12 @@ public class StudentDao extends BaseDao {
     }
 
     public boolean setStudentPhoto(Student student){
-        String sql = "update student set photo = ?";
+        String sql = "update student set photo = ? where id = ?";
         Connection connection = getConnention();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setBinaryStream(1,student.getPhoto());
+            preparedStatement.setInt(2,student.getId());
             return preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();

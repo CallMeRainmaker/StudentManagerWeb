@@ -440,7 +440,7 @@
 		<img id="edit_photo" alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="" />
 		<form id="uploadForm" method="post" enctype="multipart/form-data" action="PhotoServlet?method=SetPhoto" target="photo_target">
 			<!-- StudentServlet?method=SetPhoto -->
-			<input type="hidden" name="id" id="set-photo-id">
+			<input type="hidden" name="sid" id="set-photo-id">
 			<input class="easyui-filebox" name="photo" data-options="prompt:'选择照片'" style="width:200px;">
 			<input id="upload-photo-btn" onClick="uploadPhoto()" class="easyui-linkbutton" style="width: 50px; height: 24px;" type="button" value="上传"/>
 		</form>

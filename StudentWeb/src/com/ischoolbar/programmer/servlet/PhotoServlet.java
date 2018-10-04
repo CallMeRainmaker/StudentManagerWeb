@@ -70,7 +70,7 @@ public class PhotoServlet extends HttpServlet {
     }
 
     private void getPhoto(HttpServletRequest request, HttpServletResponse response) throws IOException{
-        int sid = request.getParameter("uid") == null ? 0:Integer.parseInt(request.getParameter("uid"));
+        int sid = request.getParameter("sid") == null ? 0:Integer.parseInt(request.getParameter("sid"));
         if(sid!=0){
             StudentDao studentDao = new StudentDao();
             Student student = studentDao.getStudent(sid);
