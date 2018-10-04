@@ -4,12 +4,53 @@ import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Teacher;
 import com.ischoolbar.programmer.util.StringUtil;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TeacherDao extends BaseDao {
+    public Teacher getTeacher(int id){
+        String sql = "select * from teacher where id = " + id;
+        Teacher teacher = null;
+        ResultSet resultSet = query(sql);
+        try {
+            if(resultSet.next()){
+                teacher = new Teacher();
+                teacher.setId(resultSet.getInt("id"));
+                teacher.setClazz_id(resultSet.getInt("clazz_id"));
+                teacher.setMobile(resultSet.getString("mobile"));
+                teacher.setName(resultSet.getString("name"));
+                teacher.setPassword(resultSet.getString("password"));
+                teacher.setPhoto(resultSet.getBinaryStream("photo"));
+                teacher.setQq(resultSet.getString("qq"));
+                teacher.setSex(resultSet.getString("sex"));
+                teacher.setNumber(resultSet.getString("number"));
+                return teacher;
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return teacher;
+    }
+
+    public boolean setTeacherPhoto(Teacher teacher){
+        String sql = "update teacher set photo = ? where id = ?";
+        Connection connection = getConnention();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setBinaryStream(1,teacher.getPhoto());
+            preparedStatement.setInt(2,teacher.getId());
+            return preparedStatement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return update(sql);
+    }
+
     public boolean deleteTeacher(int id){
         String sql = "delete from teacher where id = "+id;
         return  update(sql);

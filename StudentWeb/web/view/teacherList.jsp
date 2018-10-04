@@ -342,7 +342,7 @@
 				$("#edit_qq").textbox('setValue', selectRow.qq);
 				$("#edit_photo").attr("src", "PhotoServlet?method=GetPhoto&type=2&tid="+selectRow.id);
 				$("#set-photo-id").val(selectRow.id);
-				var clazzid = selectRow.clazzId;
+				var clazzid = selectRow.clazz_id;
 				setTimeout(function(){
 					$("#edit_clazzList").combobox('setValue', clazzid);
 				}, 100);

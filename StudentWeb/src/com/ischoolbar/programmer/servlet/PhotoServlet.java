@@ -1,7 +1,9 @@
 package com.ischoolbar.programmer.servlet;
 
 import com.ischoolbar.programmer.dao.StudentDao;
+import com.ischoolbar.programmer.dao.TeacherDao;
 import com.ischoolbar.programmer.model.Student;
+import com.ischoolbar.programmer.model.Teacher;
 import com.lizhou.exception.FileFormatException;
 import com.lizhou.exception.NullFileException;
 import com.lizhou.exception.ProtocolException;
@@ -43,6 +45,17 @@ public class PhotoServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         try {
             InputStream inputStream = fileUpload.getUploadInputStream();
+            if(tid!=0){
+                Teacher teacher = new Teacher();
+                teacher.setId(tid);
+                teacher.setPhoto(inputStream);
+                TeacherDao teacherDao = new TeacherDao();
+                if(teacherDao.setTeacherPhoto(teacher)){
+                    response.getWriter().write("<div id='message'>上传成功</div>");
+                }else {
+                    response.getWriter().write("<div id='message'>上传失败</div>");
+                }
+            }
             if(sid!=0){
                 Student student = new Student();
                 student.setId(sid);
@@ -71,11 +84,23 @@ public class PhotoServlet extends HttpServlet {
 
     private void getPhoto(HttpServletRequest request, HttpServletResponse response) throws IOException{
         int sid = request.getParameter("sid") == null ? 0:Integer.parseInt(request.getParameter("sid"));
+        int tid = request.getParameter("tid") == null ? 0 : Integer.parseInt(request.getParameter("tid"));
         if(sid!=0){
             StudentDao studentDao = new StudentDao();
             Student student = studentDao.getStudent(sid);
             if(student!=null){
                 InputStream photo= student.getPhoto();
+                if(photo!=null){
+                    byte[] bytes = new byte[photo.available()];
+                    photo.read(bytes);
+                    response.getOutputStream().write(bytes,0,bytes.length);
+                }
+            }
+        }else if(tid!=0){
+            TeacherDao teacherDao = new TeacherDao();
+            Teacher teacher = teacherDao.getTeacher(tid);
+            if(teacher!=null){
+                InputStream photo = teacher.getPhoto();
                 if(photo!=null){
                     byte[] bytes = new byte[photo.available()];
                     photo.read(bytes);
