@@ -1,7 +1,11 @@
 package com.ischoolbar.programmer.servlet;
 
 import com.ischoolbar.programmer.dao.AdminDao;
+import com.ischoolbar.programmer.dao.StudentDao;
+import com.ischoolbar.programmer.dao.TeacherDao;
 import com.ischoolbar.programmer.model.Admin;
+import com.ischoolbar.programmer.model.Student;
+import com.ischoolbar.programmer.model.Teacher;
 import com.ischoolbar.programmer.util.StringUtil;
 
 import javax.servlet.http.HttpServlet;
@@ -54,30 +58,31 @@ public class LoginServlet extends HttpServlet {
                 loginStatus = "admin";
                 break;
             }
-//            case 2:{
-//                AdminDao adminDao = new AdminDao();
-//                Admin admin = adminDao.login(name, password);
-//                if (admin == null) {
-//                    response.getWriter().write("loginError");
-//                    return;
-//                }
-//                HttpSession session = request.getSession();
-//                session.setAttribute("user", student);
-//                session.setAttribute("userType", type);
-//                loginStatus = "student";
-//            }
-//            case 3:{
-//                AdminDao adminDao = new AdminDao();
-//                Admin admin = adminDao.login(name, password);
-//                if (admin == null) {
-//                    response.getWriter().write("loginError");
-//                    return;
-//                }
-//                HttpSession session = request.getSession();
-//                session.setAttribute("user", teacher);
-//                session.setAttribute("userType", type);
-//                loginStatus = "teacher";
-//            }
+            case 2:{
+                StudentDao studentDao = new StudentDao();
+                Student student = studentDao.login(name, password);
+                if (student == null) {
+                    response.getWriter().write("loginError");
+                    return;
+                }
+                HttpSession session = request.getSession();
+                session.setAttribute("user", student);
+                session.setAttribute("userType", type);
+                loginStatus = "student";
+                break;
+            }
+            case 3:{
+                TeacherDao teacherDao = new TeacherDao();
+                Teacher teacher = teacherDao.login(name, password);
+                if (teacher == null) {
+                    response.getWriter().write("loginError");
+                    return;
+                }
+                HttpSession session = request.getSession();
+                session.setAttribute("user", teacher);
+                session.setAttribute("userType", type);
+                loginStatus = "teacher";
+            }
             default:
                 break;
         }

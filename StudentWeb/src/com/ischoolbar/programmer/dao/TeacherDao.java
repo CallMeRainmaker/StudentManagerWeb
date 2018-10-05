@@ -12,6 +12,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeacherDao extends BaseDao {
+    public Teacher login(String name, String password){
+        String sql = "select * from teacher where name = '" + name + "' and password = '"+ password +"' ";
+        ResultSet resultSet = query(sql);
+        try{
+            if(resultSet.next()){
+                Teacher teacher = new Teacher();
+                teacher.setId(resultSet.getInt("id"));
+                teacher.setClazz_id(resultSet.getInt("clazz_id"));
+                teacher.setMobile(resultSet.getString("mobile"));
+                teacher.setName(resultSet.getString("name"));
+                teacher.setPassword(resultSet.getString("password"));
+                teacher.setPhoto(resultSet.getBinaryStream("photo"));
+                teacher.setQq(resultSet.getString("qq"));
+                teacher.setSex(resultSet.getString("sex"));
+                teacher.setNumber(resultSet.getString("number"));
+                return teacher;
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public Teacher getTeacher(int id){
         String sql = "select * from teacher where id = " + id;
         Teacher teacher = null;
