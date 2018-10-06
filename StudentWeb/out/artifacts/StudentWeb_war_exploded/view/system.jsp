@@ -29,7 +29,7 @@
                     ]
                 },
                 </c:if>
-                <c:if test="${userType == 1}">
+                <c:if test="${userType == 1 || userType == 3}">
                 {"menuid":"3","icon":"","menuname":"教师信息管理",
                     "menus":[
                         {"menuid":"31","menuname":"教师列表","icon":"icon-user-teacher","url":"TeacherServlet?method=toTeacherListView"},

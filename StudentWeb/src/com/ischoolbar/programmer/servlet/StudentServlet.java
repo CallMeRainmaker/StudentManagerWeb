@@ -77,6 +77,11 @@ public class StudentServlet extends HttpServlet {
         Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
         Integer clazz = request.getParameter("clazzid") == null ? 0 : Integer.parseInt(request.getParameter("clazzid"));
         Student  student = new Student();
+        int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
+        if(userType == 2){
+            Student currentUser = (Student)request.getSession().getAttribute("user");
+            student.setId(currentUser.getId());
+        }
         student.setName(name);
         student.setClazzId(clazz);
         StudentDao studentDao = new StudentDao();

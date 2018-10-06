@@ -106,6 +106,9 @@ public class TeacherDao extends BaseDao {
         if(teacher.getClazz_id() != 0){
             sql += " and clazz_id = " + teacher.getClazz_id();
         }
+        if(teacher.getId()!=0){
+            sql += " and id = " + teacher.getId();
+        }
         sql += " limit " + page.getStart() + "," + page.getPageSize();
         ResultSet resultSet = query(sql.replaceFirst("and","where"));
         try {
@@ -134,6 +137,9 @@ public class TeacherDao extends BaseDao {
         }
         if (teacher.getClazz_id() != 0) {
             sql += " and clazz_id = " + teacher.getClazz_id();
+        }
+        if(teacher.getId()!=0){
+            sql += " and id = " + teacher.getId();
         }
         ResultSet resultSet = query(sql.replaceFirst("and", "where"));
         try {

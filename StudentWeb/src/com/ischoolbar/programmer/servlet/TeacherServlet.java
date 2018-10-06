@@ -54,6 +54,11 @@ public class TeacherServlet extends HttpServlet {
         Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
         Integer clazz = request.getParameter("clazz_id") == null ? 0 : Integer.parseInt(request.getParameter("clazz_id"));
         Teacher teacher = new Teacher();
+        int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
+        if(userType == 3){
+            Teacher currentTeacher = (Teacher)request.getSession().getAttribute("user");
+            teacher.setId(currentTeacher.getId());
+        }
         teacher.setName(name);
         teacher.setClazz_id(clazz);
         TeacherDao teacherDao = new TeacherDao();
