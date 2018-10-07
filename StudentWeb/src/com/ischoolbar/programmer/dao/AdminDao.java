@@ -24,4 +24,9 @@ public class AdminDao extends BaseDao {
         }
         return null;
     }
+
+    public boolean editPassword(Admin admin,String newpassword){
+        String sql = "update admin set password = '"+newpassword+"' where id = "+admin.getId();
+        return update(sql);
+    }
 }

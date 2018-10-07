@@ -60,9 +60,9 @@
 					} else if("admin" == msg){
 						window.location.href = "SystemServlet?method=toAdminView";
 					} else if("student" == msg){
-						window.location.href = "SystemServlet?method=toStudentView";
+						window.location.href = "SystemServlet?method=toAdminView";
 					} else if("teacher" == msg){
-						window.location.href = "SystemServlet?method=toTeacherView";
+						window.location.href = "SystemServlet?method=toAdminView";
 					}
 				}
 				

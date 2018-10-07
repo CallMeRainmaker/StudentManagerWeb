@@ -79,6 +79,11 @@ public class TeacherDao extends BaseDao {
         return  update(sql);
     }
 
+    public boolean editPassword(Teacher teacher,String newpassword){
+        String sql = "update teacher set password = '"+newpassword+"' where id = "+teacher.getId();
+        return update(sql);
+    }
+
     public boolean editTeacher(Teacher teacher){
         String sql = "update teacher set name = '"+teacher.getName()+"'";
         sql += ",clazz_id = '"+teacher.getClazz_id()+"'";

@@ -150,4 +150,9 @@ public class StudentDao extends BaseDao {
         }
         return total;
     }
+
+    public boolean editPassword(Student student,String newpassword){
+        String sql = "update student set password = '"+newpassword+"' where id = "+student.getId();
+        return update(sql);
+    }
 }

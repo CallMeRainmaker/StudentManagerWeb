@@ -8,10 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="dc1d5c1c-2128-4cf3-b33c-33568ae93c23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/AdminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/SystemServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StudentWeb_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/SystemServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AdminDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/TeacherDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/dao/AdminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/SystemServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/classes/com/ischoolbar/programmer/servlet/SystemServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,9 +111,9 @@
     <session id="-1900534501">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="44" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.11" value="10" />
+          <entry key="project.open.time.11" value="11" />
           <entry key="project.open.time.12" value="6" />
           <entry key="project.open.time.13" value="10" />
           <entry key="project.open.time.14" value="1" />
@@ -117,7 +122,7 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.20" value="3" />
+          <entry key="project.open.time.20" value="4" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.24" value="1" />
@@ -125,7 +130,7 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="51" />
+          <entry key="project.opened" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -133,9 +138,9 @@
           <entry key="admin" value="3" />
           <entry key="css" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="123" />
+          <entry key="java" value="127" />
           <entry key="jpg" value="1" />
-          <entry key="jsp" value="50" />
+          <entry key="jsp" value="55" />
           <entry key="sql" value="4" />
           <entry key="xml" value="6" />
         </counts>
@@ -146,16 +151,16 @@
           <entry key="Database Element" value="3" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="123" />
-          <entry key="JSP" value="50" />
+          <entry key="JAVA" value="127" />
+          <entry key="JSP" value="55" />
           <entry key="Scratch" value="4" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="13462" />
-          <entry key="jsp" value="2017" />
+          <entry key="java" value="14204" />
+          <entry key="jsp" value="2023" />
           <entry key="sql" value="18" />
           <entry key="txt" value="22" />
           <entry key="xml" value="665" />
@@ -163,8 +168,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13462" />
-          <entry key="JSP" value="2017" />
+          <entry key="JAVA" value="14204" />
+          <entry key="JSP" value="2023" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="SQL" value="18" />
           <entry key="XML" value="665" />
@@ -175,25 +180,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="984">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/TeacherDao.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1586">
+              <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/personalView.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="53" column="75" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -236,8 +253,6 @@
         <option value="$PROJECT_DIR$/web/view/clazzList.jsp" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Student.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/util/DateFormatUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AdminDao.java" />
-        <option value="$PROJECT_DIR$/web/view/login.jsp" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ClazzServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -247,13 +262,15 @@
         <option value="$PROJECT_DIR$/web/view/teacherList.jsp" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/PhotoServlet.java" />
         <option value="$PROJECT_DIR$/web/view/personalView.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/web/view/system.jsp" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java" />
+        <option value="$PROJECT_DIR$/web/view/system.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AdminDao.java" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/TeacherDao.java" />
+        <option value="$PROJECT_DIR$/web/view/login.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java" />
       </list>
     </option>
   </component>
@@ -288,7 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -358,6 +374,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -563,18 +580,20 @@
       <workItem from="1538622906144" duration="3707000" />
       <workItem from="1538644939664" duration="2958000" />
       <workItem from="1538730318611" duration="3276000" />
-      <workItem from="1538823270164" duration="1277000" />
+      <workItem from="1538823270164" duration="1994000" />
+      <workItem from="1538913032975" duration="2080000" />
+      <workItem from="1538915136755" duration="955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195812000" />
+    <option name="totallyTimeSpent" value="199564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13879958" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14201501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -817,38 +836,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/personalView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3014">
-          <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1271">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2419">
           <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3116">
-          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AdminDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -859,24 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -889,21 +866,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
+        <state relative-caret-position="1845">
           <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/TeacherDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1968">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/TeacherDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="571">
+          <caret line="154" column="90" selection-start-line="154" selection-start-column="90" selection-end-line="154" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AdminDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/personalView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="53" column="75" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1586">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
         </state>
       </provider>
     </entry>
